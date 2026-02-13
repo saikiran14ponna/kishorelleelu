@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Leela Rani 💖 - Perfect Fit 100% + BIG Circle Photo + CENTER TITLE</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400&family=Noto+Sans+Telugu:wght@400;500;700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { 
+            overflow: hidden; 
+            height: 100%; 
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Noto Sans Telugu', sans-serif;
+            background: linear-gradient(-45deg, #ff006e, #8338ec, #3a86ff, #06ffa5);
+            background-size: 400% 400%;
+            animation: gradientShift 12s ease infinite;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5vw;
+            color: white;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            direction: ltr;
+        }
+        
+        body::-webkit-scrollbar { display: none; }
+
+        /* 🔒 PERFECT FIT LOCK SCREEN */
+        .lock-screen {
+            width: 99vw; max-width: none;
+            height: 92vh;
+            max-height: 92vh;
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(35px);
+            border-radius: 4vw;
+            padding: 2vh 2.5vw;
+            box-shadow: 0 3vh 15vh rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid rgba(255,255,255,0.3);
+            margin: 0 auto;
+        }
+
+        .lock-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2.2vh, 5vw, 3.8vh);
+            margin-bottom: 1.5vh;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+            animation: heartbeat 1.8s infinite;
+            line-height: 1.1;
+        }
+
+        .lock-input {
+            width: 85%; 
+            max-width: 320px;
+            padding: 1.2vh 2vw;
+            font-size: clamp(1.6vh, 3vw, 2.2vh);
+            border: none;
+            border-radius: 20px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background: rgba(255,255,255,0.92);
+            color: #333;
+            margin: 1.5vh 0;
+            box-shadow: 0 1.5vh 8vh rgba(0,0,0,0.3);
+        }
+
+        .lock-btn {
+            padding: 1.2vh 3vw;
+            font-size: clamp(1.5vh, 2.8vw, 2.2vh);
+            background: linear-gradient(45deg, #ff4757, #ff6b81);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 700;
+            box-shadow: 0 2vh 10vh rgba(255,71,87,0.5);
+            transition: all 0.4s ease;
+            margin-top: 1vh;
+        }
+
+        .lock-btn:hover {
+            transform: translateY(-0.4vh) scale(1.03);
+            box-shadow: 0 3vh 12vh rgba(255,71,87,0.7);
+        }
+
+        .main-content { display: none; }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* ✅ CENTERED TITLE - PERFECT ALIGNMENT */
+        h1 {
+            text-align: center !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 0.8vw;
+            font-family: 'Dancing Script', 'Noto Sans Telugu', cursive !important;
+            font-size: clamp(2.2vh, 4.8vw, 3.5vh);
+            margin: 0.8vh 0 1.2vh 0;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+            animation: heartbeat 1.8s infinite;
+            width: 99vw;
+            line-height: 1.1;
+            unicode-bidi: embed;
+            flex-wrap: wrap;
+        }
+
+        .telugu-text {
+            font-family: 'Noto Sans Telugu', 'Poppins', sans-serif !important;
+            font-weight: 500;
+            line-height: 1.25;
+        }
+        
+        .main-container {
+            width: 99vw; 
+            height: 78vh;
+            max-height: 78vh;
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(35px);
+            border-radius: 4vw;
+            padding: 2vh 2.5vw;
+            box-shadow: 0 3vh 15vh rgba(0,0,0,0.5);
+            margin: 0.5vh auto 0.8vh auto;
+            display: flex;
+            border: 2px solid rgba(255,255,255,0.3);
+            position: relative;
+            z-index: 5;
+            overflow: hidden;
+        }
+        
+        /* 🔥 BIG CIRCLE PHOTO */
+        .photo-section {
+            flex: 0 0 clamp(16vw, 24vw, 30vw);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5vw;
+        }
+        
+        .leela-photo {
+            width: clamp(14vw, 20vw, 26vw);
+            height: clamp(14vw, 20vw, 26vw);
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            border: 4px solid rgba(255,255,255,0.9);
+            box-shadow: 0 2vh 12vh rgba(255,255,255,0.5), 
+                        0 0 40px rgba(255,71,87,0.9);
+            filter: brightness(1.35) contrast(1.25);
+            animation: gentlePulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes gentlePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+        }
+        
+        .text-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-left: clamp(2vh, 25px, 3vh);
+            padding-right: 1.5vw;
+        }
+        
+        .timeline {
+            font-size: clamp(1.8vh, 2.4vw, 2.1vh);
+            line-height: 1.35;
+            height: 100%;
+            overflow-y: auto;
+            padding-right: 6px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            font-family: 'Poppins', 'Noto Sans Telugu', sans-serif;
+        }
+        
+        .timeline::-webkit-scrollbar { display: none; }
+        
+        .timeline p {
+            margin: 0 0 clamp(0.8vh, 8px, 1.2vh) 0;
+            padding: clamp(0.6vh, 6px, 0.9vh) 5px;
+            word-wrap: break-word;
+            text-align: left;
+            font-weight: 400;
+        }
+        
+        .highlight {
+            font-family: 'Dancing Script', cursive;
+            font-size: clamp(2vh, 3vw, 2.6vh);
+            color: #ffeb3b;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+            display: block;
+            margin-bottom: clamp(0.3vh, 4px, 0.6vh);
+            font-weight: 700;
+        }
+        
+        .proposal-btn {
+            width: 99vw;
+            height: 8vh;
+            padding: 0;
+            font-size: clamp(2vh, 3.8vw, 2.8vh);
+            background: linear-gradient(45deg, #ff4757, #ff6b81);
+            color: white;
+            border: none;
+            border-radius: 4vw;
+            cursor: pointer;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 700;
+            box-shadow: 0 2.5vh 12vh rgba(255,71,87,0.5);
+            transition: all 0.4s ease;
+            touch-action: manipulation;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .proposal-btn:hover, .proposal-btn:active {
+            transform: translateY(-0.5vh) scale(1.02);
+            box-shadow: 0 4vh 16vh rgba(255,71,87,0.7);
+        }
+        
+        .hearts { 
+            position: fixed; top: 0; left: 0; 
+            width: 100vw; height: 100vh; 
+            pointer-events: none; z-index: 1; 
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-8px); }
+            75% { transform: translateX(8px); }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 0.2vw; }
+            .lock-screen, .main-container, .proposal-btn { 
+                width: 99.5vw; border-radius: 5vw; 
+            }
+            .photo-section { flex: 0 0 22vw; }
+            .leela-photo { width: 18vw; height: 18vw; }
+            .timeline { font-size: clamp(1.6vh, 2.3vw, 2vh); }
+        }
+        
+        @media (max-height: 500px) {
+            .lock-screen, .main-container { height: 94vh; padding: 1.5vh 2vw; }
+            .proposal-btn { height: 6vh; font-size: clamp(1.8vh, 3.5vw, 2.5vh); }
+            h1 { font-size: clamp(2vh, 4.5vw, 3.2vh); margin: 0.5vh 0 1vh 0; }
+            .leela-photo { width: clamp(12vw, 18vw, 22vw); height: clamp(12vw, 18vw, 22vw); }
+        }
+    </style>
+</head>
+<body>
+    <!-- LOCK SCREEN -->
+    <div class="lock-screen" id="lockScreen">
+        <h1 class="lock-title">🔒 Secret Code Required 🔒</h1>
+        <p style="font-size: clamp(1.5vh, 2.3vw, 2vh); margin-bottom: 2vh; line-height: 1.3;">
+            Ee special page chudatam kosam secret code enter cheyandi 💖
+        </p>
+        <input type="password" class="lock-input" id="secretCode" 
+               placeholder="Secret Code..." maxlength="12" autofocus>
+        <button class="lock-btn" onclick="checkCode()">Unlock Leelu's Page 💝</button>
+        <p style="font-size: clamp(1vh, 1.6vw, 1.4vh); margin-top: 1.5vh; opacity: 0.85;">
+            Hint: మా రెండు పేర్లు కలిపి 😍
+        </p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content" id="mainContent">
+        <div class="hearts" id="hearts"></div>
+        
+        <!-- ✅ PERFECT CENTER "NAA LEELU" TITLE -->
+        <h1 class="telugu-text">
+            💖 
+	<span style="font-family: 'Dancing Script', cursive; font-size: 1.1em; font-weight: 700;">NAA </span>
+            <span style="font-family: 'Dancing Script', cursive; font-size: 1.1em; font-weight: 700;">LEELU</span> 
+            💖
+        </h1>
+        
+        <div class="main-container">
+            <div class="photo-section">
+                <img src="https://lh3.googleusercontent.com/gps-cs/AOGcYQQN6nXl7FQ8Z6q4VxYA6hqp2HM7NQ-fOzPDxjYRjWntzjO3ynFXvQUxRwkkFSjKl4SDcTEe8qDmnsRTsEUXKchvbuRhWs5IFdYvKC3ZAXZ70vEr3Uraz1opRFwoT_7qHcuBu3EnKmKaYJWo=w750-h1235-p-k-no" 
+                     alt="Leelu 💖" class="leela-photo">
+            </div>
+            
+            <div class="text-section">
+                <div class="timeline">
+                    <p><span class="highlight">First Day:</span> <span class="telugu-text">Neeku chusina roju... "Nuvvu naa life loki vaste bagundu" ani</span></p>
+                    <p><span class="highlight">Harshika Function:</span> <span class="telugu-text">Lakshman babai badulu nene vachanu pick up cheskovadaniki!</span> ❤️</p>
+                    <p><span class="highlight">Badri Twist:</span> <span class="telugu-text">Next day happy gane unna, evening chat chupinchadu</span> 😌</p>
+                    <p><span class="highlight">Sister Meet:</span> <span class="telugu-text">Haldi full enjoy chesam! Malli chance vachindi</span> 🎉</p>
+                    <p><span class="highlight">Nee Message:</span> <span class="telugu-text">"Evadini love cheyanu" — full confidence!</span> 💪</p>
+                    <p><span class="highlight">Jathara:</span> <span class="telugu-text">Nuvvu ekkada unte akkada nenu nidra leka wait!</span> 🌙</p>
+                    <p><span class="highlight">Family Hope:</span> <span class="telugu-text">Nuvvu manchidhivi ani full nammakam!</span> 🏠</p>
+                    <p><span class="highlight">Today:</span> <span class="telugu-text">Naa heart completely open chesanu!</span> 💝</p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="proposal-btn" onclick="propose()">
+            Naa Forever Valentine Ayyavura? 💍
+        </button>
+    </div>
+
+    <script>
+        const SECRET_CODE = "ILOVELEELU";
+
+        function checkCode() {
+            const input = document.getElementById('secretCode');
+            const code = input.value.trim().toUpperCase();
+            
+            if (code === SECRET_CODE) {
+                document.getElementById('lockScreen').style.display = 'none';
+                document.getElementById('mainContent').style.display = 'block';
+                setTimeout(() => document.querySelector('.proposal-btn').focus(), 500);
+                
+                setInterval(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'heart';
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                    document.getElementById('hearts').appendChild(heart);
+                    setTimeout(() => heart.remove(), 5000);
+                }, window.innerWidth < 500 ? 450 : 300);
+            } else {
+                input.style.animation = 'shake 0.5s ease-in-out';
+                input.value = '';
+                setTimeout(() => input.style.animation = '', 500);
+                alert('❌ Wrong code!\nHint: మా రెండు పేర్లు కలిపి 💕');
+            }
+        }
+
+        document.getElementById('secretCode').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') checkCode();
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes pop {
+                0% { transform: scale(0) rotate(0deg); opacity: 1; }
+                50% { transform: scale(1.3) rotate(180deg); opacity: 1; }
+                100% { transform: scale(0) translateY(-8vh) rotate(360deg); opacity: 0; }
+            }
+            .heart {
+                position: absolute; width: clamp(1.5vh, 2.5vw, 2.5vh); 
+                height: clamp(1.3vh, 2.3vw, 2.3vh); 
+                animation: float 5s infinite linear; opacity: 0.8; transform: rotate(-45deg);
+            }
+            .heart:before, .heart:after {
+                content: ""; width: clamp(1.5vh, 2.5vw, 2.5vh); 
+                height: clamp(2.5vh, 3.5vw, 3.5vh); position: absolute; 
+                background: #ff4d94; border-radius: clamp(1.5vh, 2.5vw, 2.5vh); 
+                transform: rotate(-45deg); transform-origin: 0 100%;
+            }
+            .heart:after { left: 50%; transform: translateX(-50%) rotate(45deg); transform-origin: 100% 100%; }
+            @keyframes float {
+                0% { transform: translateY(100vh) rotate(-45deg) scale(0); opacity: 1; }
+                100% { transform: translateY(-8vh) rotate(-45deg) scale(1); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        function propose() {
+            const btn = document.querySelector('.proposal-btn');
+            btn.innerHTML = '💖 Loading...';
+            btn.style.background = 'linear-gradient(45deg, #00b894, #55efc4)';
+            btn.disabled = true;
+            
+            for(let i = 0; i < 80; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.innerHTML = '💖';
+                    heart.style.cssText = `
+                        position: fixed; left: ${Math.random()*100}vw; top: 50vh;
+                        font-size: clamp(2vh, ${3+Math.random()*2}vw, 4vh); 
+                        z-index: 9999; pointer-events: none; 
+                        animation: pop 1.8s ease-out forwards;
+                    `;
+                    document.body.appendChild(heart);
+                    setTimeout(() => heart.remove(), 1800);
+                }, i * 35);
+            }
+            
+            setTimeout(() => {
+                alert('😍 YESSS LEELU! 😍\nNaa Forever Valentine!\nI LOVE YOU FOREVER! ❤️💍');
+                btn.innerHTML = 'I Love You Leelu! 💕';
+                btn.disabled = false;
+                btn.onclick = () => location.reload();
+            }, 1400);
+        }
+    </script>
+</body>
+</html>
